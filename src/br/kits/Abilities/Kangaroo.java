@@ -1,4 +1,4 @@
-package br.kits.abilidades;
+package br.kits.Abilities;
 
 import java.util.ArrayList;
 

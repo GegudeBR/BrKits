@@ -7,7 +7,8 @@ import org.bukkit.event.HandlerList;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import br.kits.abilidades.Kangaroo;
+import br.kits.Abilities.Kangaroo;
+import br.kits.Commands.Dia;
 
 public class Fight extends JavaPlugin{
 
@@ -18,10 +19,13 @@ public class Fight extends JavaPlugin{
 		 registerEvents();
 	 }
 	 org.bukkit.plugin.PluginManager pm = Bukkit.getServer().getPluginManager();
-	 public void registerEvents() {
-		 pm.registerEvents(new Kangaroo(this), this);
-	 }
 	public void onDisable(){
 		  HandlerList.unregisterAll((Plugin)this);
 	  }
+	 public void registerEvents() {
+		 pm.registerEvents(new Kangaroo(this), this);
+	 }
+	 public void registerCommands() {
+		 getCommand("day").setExecutor(new Dia());
+	 }
 }
