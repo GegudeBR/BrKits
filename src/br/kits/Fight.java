@@ -17,6 +17,7 @@ public class Fight extends JavaPlugin{
 
 	 public void onEnable() {
 		 registerEvents();
+		 registerCommands();
 	 }
 	 org.bukkit.plugin.PluginManager pm = Bukkit.getServer().getPluginManager();
 	public void onDisable(){

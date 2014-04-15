@@ -1,0 +1,6 @@
+name: BrKits		
+version: 1.0
+main: br.kits.Fight
+commands:
+  day:
+     description: Dia!
