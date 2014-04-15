@@ -12,11 +12,17 @@ public class Dia implements CommandExecutor{
 		    if (!(sender instanceof Player)) {
 		        sender.sendMessage(ChatColor.RED + "Voce nao e um jogador!");
 		        return false;
-		      }
+		      } 
 	    final Player player = (Player)sender;
-	    if (commandLabel.equalsIgnoreCase("day") && player.hasPermission("fight.staff")) {
+	    if (commandLabel.equalsIgnoreCase("dia") && player.hasPermission("fight.staff")) {
 	    	player.getWorld().setTime(0L);
 	    }
-		return false;
-	  }
+	    
+	    if (commandLabel.equalsIgnoreCase("noite") && player.hasPermission("fight.staff")) {
+	    	player.getWorld().setTime(12500L);
+	    } return false;
+	   
+ }	  
 }
+
+
