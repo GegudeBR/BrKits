@@ -2,5 +2,7 @@ name: FightKits
 version: 1.0
 main: me.gegude.FightPvP
 commands:
-  day:
+  dia:
     description: Dia : )
+  noite:
+    description: Noite : )
