@@ -27,6 +27,7 @@ public class Fight extends JavaPlugin{
 		 pm.registerEvents(new Kangaroo(this), this);
 	 }
 	 public void registerCommands() {
-		 getCommand("day").setExecutor(new Dia());
+		 getCommand("dia").setExecutor(new Dia());
+		 getCommand("noite").setExecutor(new Dia());
 	 }
 }
